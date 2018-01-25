@@ -1,4 +1,26 @@
-baseURL = "https://chaoyuezhao.github.io/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
+baseurl = "https://chaoyuezhao.github.io/"
+title = "赵超越的主页"
+copyright = "Copyright &copy; 2018 - 超越"
+canonifyurls = true
+theme = "kiera"
+Language = "CN"
+
+paginate = 3
+
+summaryLength = 5
+enableEmoji = true
+pygmentsCodeFences = true
+
+[author]
+    name = "超越"
+    github = "ChaoyueZhao"
+    gitlab = ""
+    linkedin = ""
+    facebook = ""
+    twitter = "ZCY521"
+    instagram = ""
+
+[params]
+    tagline = "道义是天际的星光，科学是指路的灯火"
+
+
