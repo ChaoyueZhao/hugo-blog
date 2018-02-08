@@ -11,7 +11,7 @@ googleAnalytics = ""
 Paginate = 5
 preserveTaxonomyNames = true
 
-enableRobotsTXT = true # generate robots.txt
+enableRobotsTXT = false # generate robots.txt
 
 # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
 pygmentsCodefences = true
@@ -20,7 +20,7 @@ pygmentsCodefences = true
 defaultContentLanguage = "zh"
 
 [params.info]
-description = "道义是天际的星光，科学是指路的灯火"
+description = "技术、翻译、随笔"
 title404 = "Nothing's here!"
 
 [params.assets]
@@ -68,12 +68,30 @@ twitter = "ZCY521"
 platforms = ["github","twitter","email","codepen"]
 
 [taxonomies]
-author = "authors"
+author = "超越"
 category = "categories"
 tag = "tags"
 
 [permalinks]
 page = "/:slug/"
+
+[[menu.main]]
+name = "文章"
+weight = -11
+identifier = "posts"
+url = "/posts"
+
+[[menu.main]]
+name = "关于"
+weight = -10
+identifier = "about"
+url = "/posts/about.md"
+
+[[menu.main]]
+name = "首页"
+weight = -12
+identifier = "home"
+url = "index.html"
 
 [blackfriday]
 hrefTargetBlank = true
