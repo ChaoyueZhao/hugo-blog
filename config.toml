@@ -5,22 +5,31 @@ copyright = ""
 
 theme = "minimo"
 
-disqusShortname = "zhaochaoyue"
-googleAnalytics = ""
 
-Paginate = 5
+disqusShortname = "ge-ren-wang-zhan"
+googleAnalytics = "UA-113143189-2"
+
+Paginate = 10
 preserveTaxonomyNames = true
 
 enableRobotsTXT = false # generate robots.txt
 
 # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
 pygmentsCodefences = true
+pygmentsUseClasses = false
+pygmentsStyle = "manni"
+PygmentsOptions="linenos='table', linenospecial=2" 
+
 
 # Missing translations will default to this content language
 defaultContentLanguage = "zh"
 
+[params.sidebar]
+enable = true
+sticky = true
+
 [params.info]
-description = "技术、翻译、随笔"
+description = ""
 title404 = "Nothing's here!"
 
 [params.assets]
@@ -31,9 +40,9 @@ gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
 prefix = ""
-holder = "超越"
+holder = "&hearts; <a href='http://www.zhaochaoyue.com'>超越</a>"
 startYear = "2017"
-suffix = ""
+suffix = " | Powered by <a href='https://gohugo.io/'>Hugo</a>"
 
 [params.settings]
 # date & time format: https://golang.org/pkg/time/
@@ -46,10 +55,6 @@ showReadingTime = true
 noTermCloudShuffle = false
 homepageSections = ["recent_posts"]
 
-[params.opengraph.facebook]
-admins = [] # array of Facebook IDs
-appID = ""
-pageID = ""
 
 [params.opengraph.twitter]
 page = "zcy521" # Twitter page username
@@ -63,6 +68,7 @@ codepen = "Chaoyue"
 email = "me@zhaochaoyue.com"
 github = "ChaoyueZhao"
 twitter = "ZCY521"
+zhihu = "zhaochaoyue521"
 
 [params.social.config]
 platforms = ["github","twitter","email","codepen"]
@@ -76,22 +82,16 @@ tag = "tags"
 page = "/:slug/"
 
 [[menu.main]]
-name = "文章"
-weight = -11
+name = "归档"
 identifier = "posts"
-url = "/posts"
+url = "/posts/"
+weight = 10
 
 [[menu.main]]
-name = "关于"
-weight = -10
-identifier = "about"
-url = "/posts/about.md"
-
-[[menu.main]]
-name = "首页"
-weight = -12
-identifier = "home"
-url = "index.html"
+name = "分类"
+identifier = "categories"
+url = "/categories/"
+weight = 15
 
 [blackfriday]
 hrefTargetBlank = true
