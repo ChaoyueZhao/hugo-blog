@@ -1,14 +1,10 @@
----
-title: "Hugo建站入门"
-date: 2018-01-25T22:15:19+08:00
-draft: false
-cover: /image/hugo.jpg
-isCJKLanguage: true
-categories:
-  - 技术
-tags:
-  - Hugo
----
++++
+title = "Hogo建站入门"
+date = 2016-04-20
+lastmod = 2018-01-13T00:00:00
+draft = false
+tags = []
++++
 
 Hugo是时下特别流行的静态网站生成器，据统计排名仅次于Jekyll，它使用Go语言开发而成，Hugo最大的特点就是“快”，它的官网上毫不谦虚的炫耀着：“The world's fastest framework for buliding websites"。
 
